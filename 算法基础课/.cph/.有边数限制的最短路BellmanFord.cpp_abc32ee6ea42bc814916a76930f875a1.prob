@@ -1,0 +1,1 @@
+{"name":"Local: 有边数限制的最短路BellmanFord","url":"c:\\Users\\chr\\Desktop\\算法基础课\\算法基础课\\有边数限制的最短路BellmanFord.cpp","tests":[{"id":1705568961526,"input":"3 3 1\n1 2 1\n2 3 1\n1 3 3","output":"3"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\chr\\Desktop\\算法基础课\\算法基础课\\有边数限制的最短路BellmanFord.cpp","group":"local","local":true}
