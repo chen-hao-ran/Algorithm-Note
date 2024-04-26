@@ -1,1 +1,1 @@
-# Acwing
+# The repo stores my algorithm learning notes
