@@ -1,0 +1,1 @@
+{"name":"Local: 欧拉函数","url":"d:\\Github_Repo\\Algorithm-Note\\Daimayuan\\数论初级\\欧拉函数.cpp","tests":[{"id":1714754570010,"input":"2\n12345\n987654321","output":"6576\n619703040"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Github_Repo\\Algorithm-Note\\Daimayuan\\数论初级\\欧拉函数.cpp","group":"local","local":true}

@@ -2,26 +2,29 @@
 
 using namespace std;
 
-int main() {
-    int T;
-    cin >> T;
-    while (T--) {
-        int n;
-        cin >> n;
-        
-        int sum = n;
-        for (int d = 2; d <= n / d; d++) {
-            int x = n % d; 
-            if (x == 0) {
-                sum = sum / d * (d - 1);
-                while (n % d == 0) n /= d;
-            }
+void solve() {
+    int n;
+    cin >> n;
+    int ans = n;
+    for (int d = 2; d <= n / d; d++) {
+        if (n % d == 0) 
+        {
+            ans = ans / d * (d - 1);
+            while (n % d == 0) n /= d;
         }
-        cout << n << ' ' << '\n';
-
-        if (n != 1) sum = sum / n * (n - 1);
-        cout << sum << '\n';
     }
+    if (n != 1) ans = ans / n * (n - 1);
+
+    cout << ans << '\n';
+}
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
     return 0;
 }
 
@@ -31,4 +34,5 @@ int main() {
 核心目标：找出n的所有素因子，并通过公式计算出最终答案
 注意点：1. d <= n / d 是为了防止超时，若d > n / d 且整除与n，那么在根号n之内一定会有一个数也整除与n，所以只需要根号n以为的即可
        2. 最后需要判定n是否为1，因为有可能d > n / d 时素因子还找全，那么最后的非1的n也是素因子   
+       3. 注意d和(d - 1)的乘除顺序，因为先乘后除会爆int
 */
