@@ -7,6 +7,9 @@
 #define pll pair<ll, ll>
 #define all(x) (x).begin(), (x).end()
 using namespace std;
+const ll infll = 1 << 63 - 1;
+const int infint = 1 << 31 - 1;
+const int inf = 0x3f3f3f3f;
 
 void init() {
 
@@ -21,8 +24,8 @@ int main() {
     cin.tie(0); cout.tie(0);
     int t;
     cin >> t;
+    init();
     while(t --) {
-        init();
         solve();
     }
     return 0;

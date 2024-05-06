@@ -26,13 +26,13 @@ void solve() {
     int d = exgcd(a, b, x, y);
 
     bool ok = true;
-    __int128 ansx, ansy;
+    ll ansx, ansy;
     if (m % d != 0) ok = false;
     else {
         a /= d;
         b /= d;
         m /= d;
-        ansx = (__int128)x * m;
+        ansx = (ll)x * (m % b) % b;
         ansx %= b;
         if (ansx < 0) ansx += b;
         ansy = (m - a * ansx) / b;
