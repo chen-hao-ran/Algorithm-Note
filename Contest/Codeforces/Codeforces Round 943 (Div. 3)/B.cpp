@@ -16,7 +16,19 @@ void init() {
 }
 
 void solve() {
-
+    int n, m;
+    cin >> n >> m;
+    string s1, s2;
+    cin >> s1 >> s2;
+    int i = 0, j = 0;
+    while (j < m) {
+        if (s1[i] == s2[j]) {
+            i++;
+            j++;
+        } else j++;
+    }
+    int ans = i;
+    cout << ans << '\n';
 }
 
 int main() {
@@ -30,3 +42,8 @@ int main() {
     }
     return 0;
 }
+
+/*
+问题：给定两个01组成的字符串a，b，请问a中的最大前缀是多少，使得该前缀属于b的子串
+思路：贪心，a中的前缀字符在b中先匹配上的话就直接匹配，留更多位置给后面的字符
+*/

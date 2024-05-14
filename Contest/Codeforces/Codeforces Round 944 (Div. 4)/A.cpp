@@ -16,7 +16,9 @@ void init() {
 }
 
 void solve() {
-
+    int a, b;
+    cin >> a >> b;
+    cout << min(a, b) << ' ' << max(a, b) << '\n';
 }
 
 int main() {

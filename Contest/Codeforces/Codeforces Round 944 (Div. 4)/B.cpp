@@ -16,7 +16,17 @@ void init() {
 }
 
 void solve() {
-
+    string s;
+    cin >> s;
+    for (int i = 0; i < s.length(); i++) {
+        if (s[i] != s[0]) {
+            swap(s[i], s[0]);
+            cout << "YES" << '\n';
+            cout << s << '\n';
+            return;
+        }
+    }
+    cout << "NO" << '\n';
 }
 
 int main() {

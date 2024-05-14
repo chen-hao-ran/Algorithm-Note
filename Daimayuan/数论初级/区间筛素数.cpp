@@ -2,14 +2,14 @@
 
 #define ll long long
 #define u32 unsigned int
-// #define u64 unsigned long long
-// #define pii pair<int, int> 
-// #define pll pair<ll, ll>
+#define u64 unsigned long long
+#define pii pair<int, int> 
+#define pll pair<ll, ll>
 #define all(x) (x).begin(), (x).end()
 using namespace std;
-// const ll infll = 1 << 63 - 1;
-// const int infint = 1 << 31 - 1;
-// const int inf = 0x3f3f3f3f;
+const ll infll = 1 << 63 - 1;
+const int infint = 1 << 31 - 1;
+const int inf = 0x3f3f3f3f;
 const int N = 10000000;
 
 void init() {

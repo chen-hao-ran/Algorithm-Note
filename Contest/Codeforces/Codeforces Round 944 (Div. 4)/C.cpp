@@ -16,7 +16,17 @@ void init() {
 }
 
 void solve() {
-
+    int a, b, c, d;
+    cin >> a >> b >> c >> d;
+    if (a > b) swap(a, b);
+    int cnt = 0;
+    for (int i = a; i <= b; i++) {
+        if (c == i) cnt++;
+        if (d == i) cnt++;
+    }
+    // cout << cnt << '\n';
+    if (cnt == 1) cout << "YES" << '\n';
+    else cout << "NO" << '\n';
 }
 
 int main() {

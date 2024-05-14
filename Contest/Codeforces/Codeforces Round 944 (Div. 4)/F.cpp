@@ -16,7 +16,17 @@ void init() {
 }
 
 void solve() {
-
+    ll r;
+    cin >> r;
+    ll ans = 0;
+    for (ll i = 1; i <= r; i++) {
+        ll _l = r * r - i * i;
+        ll _r = (r + 1) * (r + 1) - i * i - 1;
+        ll ls = sqrt(_l), rs = sqrt(_r);
+        if (ls * ls < _l) ls++;
+        ans += (rs - ls + 1) * 4;
+    }
+    cout << ans << '\n';
 }
 
 int main() {
