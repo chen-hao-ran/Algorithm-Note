@@ -1,0 +1,49 @@
+#include <bits/stdc++.h>
+
+#define ll long long
+#define u32 unsigned int
+#define u64 unsigned long long
+#define pii pair<int, int> 
+#define pll pair<ll, ll>
+#define all(x) (x).begin(), (x).end()
+using namespace std;
+const ll infll = 1 << 63 - 1;
+const int infint = 1 << 31 - 1;
+const int inf = 0x3f3f3f3f;
+
+void init() {
+
+}
+
+void solve() {
+    int n, m;
+    cin >> n >> m;
+    vector<int> l(n + 1, 0), r(n + 1, 0);
+    for (int i = 1; i <= m; i++) {
+        int x, y;
+        cin >> x >> y;
+        l[x]++;
+        r[y]++;
+    }
+
+    int id;
+    for (int i = 1; i <= n; i++) {
+        if (l[i] >= r[i]) id = i;
+    }    
+    
+    for (int i = 1; i <= n; i++) {
+        if (i != id) cout << id << ' ';
+        else cout << 0 << ' ';
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+    int t = 1;
+    init();
+    while(t --) {
+        solve();
+    }
+    return 0;
+}
